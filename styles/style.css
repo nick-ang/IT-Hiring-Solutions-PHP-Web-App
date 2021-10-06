@@ -1,0 +1,420 @@
+/* File Name: Style.css
+Author: Nick ANg
+Created 22/8/21
+Description: This is used for index.php, jobs.php, apply.php, enhancements.php
+and about.php */
+
+/* Fix main container position for each html */
+.container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100vh;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+/* Set h1 Style */
+h1 {
+  font: 30px "Raleway", serif;
+}
+
+/* Use pseudo element selector to make first letter of page title blue */
+.title::first-letter {
+  color: blue;
+}
+
+/* Set h2 Style */
+h2 {
+  font: 20px "Raleway", serif;
+}
+
+/* Set h3 Style */
+h3 {
+  font: 18px "Raleway", serif;
+}
+
+/* Set li style */
+li {
+  font: 15px "Raleway", serif;
+}
+
+/* set p style */
+p {
+  font: 15px "Raleway", serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add header background image, add padding and convert to flex box  */
+.header {
+  background-image: url(./images/header.jpeg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: Flex;
+  justify-content: space-between;
+}
+
+/* Add spacing between header and logo and add turbulence filter effect */
+.header h1 {
+  margin-right: 20px;
+  margin-left: 20px;
+  filter: url("#turbulence");
+}
+
+/* Add footer background colour and padding */
+.footer {
+  padding: 10px;
+  color: rgb(7, 7, 7);
+  background-color: #333;
+  text-align: center;
+}
+
+/* Display contact icons horizontally */
+.ul_top_hypers li {
+  display: inline;
+  padding: 10px 10px 20px;
+}
+
+/* Display contact icons in center and add padding */
+.ul_top_hypers {
+  text-align: center;
+  padding: 10px 10px 20px;
+}
+
+/* Change Icon Appearance */
+.ul_icon {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 20%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Add hover effect */
+.ul_icon:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 1);
+  transition: 0.4s;
+}
+
+/* Change footer h1 appearance */
+.footer h1 {
+  color: white;
+}
+
+/* Create Flexbox, set banner image, size and add turbulence enhancement */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/banner.jpeg);
+  background-size: cover;
+  filter: url("#turbulence");
+}
+
+/* Change h1 colour*/
+.banner h1 {
+  color: rgb(242, 242, 242);
+  align-self: center;
+}
+
+/* Change h2 appearance and add padding/margins */
+.banner h2 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Format button */
+.btn-treehouse {
+  background-color: #04aa6d;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+/* Add Button Hover effect */
+.btn-treehouse:hover {
+  background-color: #000000;
+}
+
+/* Create flexbox to hold cards and enhance mobile viewing, set image */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(./images/banner.jpeg);
+  background-size: cover;
+}
+
+/* Format Cards inside card-container */
+.card-container-inner {
+  background-color: #aee6f1;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  flex: 1 1 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Format Form Appearance */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style fieldsets */
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 1px solid gray;
+}
+
+/* Fix table size */
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Format Table Appearance */
+th,
+td {
+  text-align: center;
+  padding: 15px;
+  text-align: left;
+  background-color: #eee9e8;
+  overflow: auto;
+}
+
+/* Change heading colour */
+th {
+  background-color: #3c9870;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+/*Change profile picture to circle and set position */
+#about-img {
+  margin-top: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid red;
+  margin-left: 20px;
+}
+
+/* position lamp container for logo animation enhancement */
+.lamp {
+  position: relative;
+  height: 7vh;
+  width: 3vh;
+}
+
+/* Set container for blobs */
+.glass {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 20%;
+}
+
+/* Set blob appearance */
+.blob {
+  border-radius: 50%;
+  background: #e80a0a;
+  position: absolute;
+}
+
+/* Set properties for blob 1 */
+.blob:nth-child(1) {
+  width: calc(15% * 1.4);
+  height: 15%;
+  left: 45%;
+  bottom: 0%;
+  animation: blob-one ease-in-out 7s infinite;
+}
+
+/* Set properties for blob 2 */
+.blob:nth-child(2) {
+  width: calc(22% * 1.4);
+  height: 22%;
+  right: 14%;
+  bottom: 0%;
+  animation: blob-two ease-in-out 11s infinite;
+}
+
+/* Set properties for blob 3 */
+.blob:nth-child(3) {
+  width: calc(32% * 1.4);
+  height: 32%;
+  bottom: 0%;
+  left: 14%;
+  animation: blob-three ease-in-out 16s infinite;
+}
+
+/* Animate blob one */
+@keyframes blob-one {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-700%);
+  }
+}
+
+/* Animate blob two */
+@keyframes blob-two {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-420%);
+  }
+}
+
+/* Animate blob three */
+@keyframes blob-three {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-305%);
+  }
+}
+
+/* Format definition list and convert to flex box */
+dl {
+  display: flex;
+  flex-flow: row wrap;
+  border: solid #333;
+  border-width: 1px 1px 0 0;
+}
+
+/* Align left definition titles to left and colour */
+dt {
+  flex-basis: 20%;
+  padding: 2px 4px;
+  background: #333;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  color: #fff;
+}
+
+/* Align right definitions to right end and colour */
+dd {
+  flex-basis: 70%;
+  font-family: "Raleway", sans-serif;
+  flex-grow: 1;
+  text-align: left;
+  margin: 0;
+  padding: 2px 4px;
+  border-bottom: 1px solid #333;
+}
+
+/* Set timetable unit colour */
+.COS60004 {
+  background-color: rgb(97, 180, 180);
+}
+
+/* Set timetable unit colour */
+.COS60009 {
+  background-color: rgb(160, 100, 224);
+}
+
+/* Set timetable unit colour */
+.COS60010 {
+  background-color: rgb(227, 136, 180);
+}
+
+/* change aside container to flexbox */
+.aside-container {
+  display: flex;
+}
+
+/* flex to take up 25% */
+.aside {
+  flex: 0 0 25%;
+  background-color: rgb(231, 231, 231);
+  border: 5px solid #ccc;
+}
+
+/* add padding to aside text */
+aside {
+  padding: 30px;
+  font: 20px "Raleway", serif;
+}
+
+/* flex about container */
+.about-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Alert styles */
+.alert {
+  color: red;
+}
+
+.clock {
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.header-text{
+  display: flex;
+}
+
+body{
+  font-size:1em;
+}
