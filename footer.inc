@@ -4,13 +4,13 @@
       <!-- create horizontal list and add icons -->
       <ul class="ul_top_hypers">
         <li>
-          <a href="" class="ul_icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com" class="ul_icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
         </li>
         <li>
-          <a href="" class="ul_icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com" class="ul_icon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </li>
         <li>
-          <a href="" class="ul_icon" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.facebook.com" class="ul_icon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
         </li>
       </ul>
     </div>

@@ -75,7 +75,6 @@ p {
 .header {
   background-image: url(./images/header.jpeg);
   background-size: cover;
-  color: rgb(255, 255, 255);
   width: 100%;
   display: Flex;
   justify-content: space-between;
@@ -144,19 +143,19 @@ p {
 
 /* Change h1 colour*/
 .banner h1 {
-  color: rgb(242, 242, 242);
+  color: rgb(0, 0, 0);
   align-self: center;
 }
 
 /* Change h2 appearance and add padding/margins */
 .banner h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: "Raleway", sans-serif;
 }
 
 /* Format button */
 .btn-treehouse {
-  background-color: #04aa6d;
+  background-color: #322d2d;
   color: white;
   text-align: center;
   margin-top: 20px;
@@ -417,4 +416,9 @@ aside {
 
 body{
   font-size:1em;
+}
+
+#apiform {
+  height:1000px;
+  overflow-y: auto;
 }

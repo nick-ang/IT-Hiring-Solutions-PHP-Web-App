@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<!-- File Name: enhancements.php
+<!-- File Name: upload-manager.php
 Author: Nick Ang
 Created 22/8/21
-Description: This is the  about section -->
+Description: This is the php upload-manager script to upload resumes section -->
 
 <!-- Set Viewport, Description, Author and Title -->
 
@@ -13,10 +13,10 @@ Description: This is the  about section -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Enhancements Page" />
-  <meta name="keywords" content="Enhancements, Turbulence Filter, Animation, keyframes" />
+  <meta name="description" content="upload-manager Page" />
+  <meta name="keywords" content="upload-manager, form, resume" />
   <meta name="author" content="Nick Ang" />
-  <title>Enhancements</title>
+  <title>upload-manager</title>
   <!-- footer icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <!-- link stylesheet -->
@@ -69,11 +69,12 @@ Description: This is the  about section -->
             // Verify MYME type of the file
             if (in_array($filetype, $allowed)) {
               // Check whether file exists before uploading it
-              if (file_exists("upload/" . $filename)) {
+              if (file_exists("resume/" . $filename)) {
                 echo $filename . " is already exists.";
               } else {
                 move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $filename);
-                echo "Your file was uploaded successfully.";
+                echo $_FILES['file']['tmp_name'];
+                echo " Your file was uploaded successfully to the upload folder.";
               }
             } else {
               echo "Error: There was a problem uploading your file. Please try again.";

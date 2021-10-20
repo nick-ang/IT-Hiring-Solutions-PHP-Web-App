@@ -28,7 +28,7 @@ Description: This is the apply page -->
 
 <body>
   <!-- define main container -->
-  <div class="container">
+  <div role="main" class="container">
     <?php
     include("header.inc");
     include("menu.inc");

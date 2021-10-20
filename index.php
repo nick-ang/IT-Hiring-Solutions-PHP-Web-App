@@ -28,7 +28,7 @@ Description: This is the home page -->
 
 <body>
   <!-- main container -->
-  <div class="container">
+  <div role="main" class="container">
     <?php
     include("header.inc");
     include("menu.inc");

@@ -21,11 +21,12 @@ Description: This is where the jobs are posted -->
   <!-- link style sheet -->
   <link rel="stylesheet" href="styles/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Serif+SC:wght@300;900&family=Raleway:wght@300&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
   <!-- Set Main Container -->
-  <div class="container">
+  <div role="main" class="container">
     <!-- Set header -->
     <?php
     include("header.inc");
@@ -139,14 +140,14 @@ Description: This is where the jobs are posted -->
             <p><em>Please check out other jobs on Adzuna as well below</em></p>
             <br />
             <!-- define form and implement php test -->
-            <form id="regform" class="form" method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+            <form id="apiform" class="form">
               <fieldset>
                 <legend>External Positions</legend>
                 <p>
                   <label for="search">Search</label>
 
-                  <input type="text" name="search" id="search" required="required" value="Developer" />
-                  <button class="btn-treehouse" type="submit" value="Submit">
+                  <input type="text" name="search" id="search" required="required" value="developer" />
+                  <button id="api" class="btn-treehouse" type="submit" value="Submit">
                     Search
                   </button>
                 </p>
@@ -173,8 +174,9 @@ Description: This is where the jobs are posted -->
       </filter>
     </svg>
     <!-- Link JavaScript script -->
-    <script src="./scripts/jobs.js"></script>
-    <script src="./scripts/enhancements.js"></script>
+    <script src="./scripts/jobs.js" async></script>
+    <script src="./scripts/api.js" async></script>
+    <script src="./scripts/enhancements.js" async></script>
 </body>
 
 </html>

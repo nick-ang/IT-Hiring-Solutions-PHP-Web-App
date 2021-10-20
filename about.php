@@ -27,7 +27,7 @@ Description: This is the  about section -->
 
 <body>
   <!-- define main container -->
-  <div class="container">
+  <div role="main" class="container">
     <?php
     include("header.inc");
     include("menu.inc");

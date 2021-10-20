@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<!-- File Name: enhancements.php
+<!-- File Name: position_search.php
 Author: Nick Ang
 Created 22/8/21
-Description: This is the  about section -->
+Description: This is the search by position section -->
 
 <!-- Set Viewport, Description, Author and Title -->
 
@@ -13,8 +13,8 @@ Description: This is the  about section -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Enhancements 2 Page" />
-  <meta name="keywords" content="Enhancements, JavaScript, API, Clock" />
+  <meta name="description" content="Search by position Page" />
+  <meta name="keywords" content="Search by Position, Ref, Manage" />
   <meta name="author" content="Nick Ang" />
   <title>Search By Ref</title>
   <!-- footer icons -->
@@ -27,7 +27,7 @@ Description: This is the  about section -->
 
 <body>
   <!-- define main container -->
-  <div class="container">
+  <div role="main" class="container">
     <?php
     include "header.inc";
     include "menu.inc";
@@ -69,6 +69,7 @@ Description: This is the  about section -->
           }
 
           $ref = test_input($_POST["ref"]);
+          echo "<h2>Search for position: $ref </h2>";
           // set up the SQL command to query or add data into the table
           $query =
             "SELECT
@@ -126,7 +127,7 @@ Description: This is the  about section -->
               echo "<td>", $row["suburb"], "</td>\n";
               echo "<td>", $row["state"], "</td>\n";
               echo "<td>", $row["postcode"], "</td>\n";
-              echo "<td>", $row["email"], "</td>\n";
+              echo "<td tabindex=\"0\">", $row["email"], "</td>\n";
               echo "<td>", $row["phone"], "</td>\n";
               echo "<td>", $row["skills"], "</td>\n";
               echo "<td>", $row["other"], "</td>\n";

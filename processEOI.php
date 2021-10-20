@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<!-- File Name: enhancements.php
+<!-- File Name: processEOI.php
 Author: Nick Ang
 Created 22/8/21
-Description: This is the  about section -->
+Description: This is the process EOI section -->
 
 <!-- Set Viewport, Description, Author and Title -->
 
@@ -13,10 +13,10 @@ Description: This is the  about section -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Enhancements Page" />
-  <meta name="keywords" content="Enhancements, Turbulence Filter, Animation, keyframes" />
+  <meta name="description" content="Process Eoi Page" />
+  <meta name="keywords" content="Process Eoi, apply, form" />
   <meta name="author" content="Nick Ang" />
-  <title>Enhancements</title>
+  <title>Process Eoi</title>
   <!-- footer icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <!-- link stylesheet -->
@@ -81,9 +81,6 @@ Description: This is the  about section -->
           $email = test_input($_POST["email"]);
           $phone = test_input($_POST["number"]);
           $text = test_input($_POST["text"]);
-          if (isset($_POST["other"])) {
-            $other = "Other";
-          }
           $skills = "Skills: ";
           if (isset($_POST["html"])) {
             $skills = $skills . "HTML, ";
@@ -104,7 +101,7 @@ Description: This is the  about section -->
             $skills = $skills . "Other";
           }
           $skills = test_input($skills);
-
+          $other = test_input($_POST["other"]);
           // Server Side Validations:
           $errMsg = "";
           if ($ref == "") {
@@ -285,7 +282,7 @@ Description: This is the  about section -->
               .= "<p> enter correct format for phone</p>";
           }
 
-          if ($other && $text = "") {
+          if ($other && !$text) {
             $errMsg
               .= "<p> Please enter text into the text box</p>";
           }

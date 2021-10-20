@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<!-- File Name: enhancements.php
+<!-- File Name: Upload.php
 Author: Nick Ang
 Created 22/8/21
-Description: This is the  about section -->
+Description: This is the Upload Form section -->
 
 <!-- Set Viewport, Description, Author and Title -->
 
@@ -13,10 +13,10 @@ Description: This is the  about section -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Enhancements Page" />
-  <meta name="keywords" content="Enhancements, Turbulence Filter, Animation, keyframes" />
+  <meta name="description" content="Upload Page" />
+  <meta name="keywords" content="Upload, form" />
   <meta name="author" content="Nick Ang" />
-  <title>Enhancements</title>
+  <title>Upload</title>
   <!-- footer icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <!-- link stylesheet -->
@@ -27,7 +27,7 @@ Description: This is the  about section -->
 
 <body>
   <!-- define main container -->
-  <div class="container">
+  <div role="main" class="container">
     <?php
     include("header.inc");
     include("menu.inc");
@@ -46,6 +46,8 @@ Description: This is the  about section -->
           <p><strong>Note:</strong> Only .pdf .jpg, .jpeg, .gif, .png formats allowed to a max size of 5 MB.</p>
         </form>
       </section>
+
+
     </div>
 
     <!-- Render Footer -->

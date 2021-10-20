@@ -16,6 +16,6 @@
         </div>
       </div>
       <!-- span for clock digits and to allow JS function to append -->
-      <span id="clock"></span>
+      <div id="clock"></div>
       <script src="./scripts/enhancements.js"></script>
     </div>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<!-- File Name: enhancements.php
+<!-- File Name: phpenhancements.php
 Author: Nick Ang
 Created 22/8/21
-Description: This is the  about section -->
+Description: This is the php enhancements section -->
 
 <!-- Set Viewport, Description, Author and Title -->
 
@@ -13,10 +13,10 @@ Description: This is the  about section -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Enhancements 2 Page" />
-  <meta name="keywords" content="Enhancements, JavaScript, API, Clock" />
+  <meta name="description" content="Enhancements 3 Page" />
+  <meta name="keywords" content="Enhancements, php, mysql" />
   <meta name="author" content="Nick Ang" />
-  <title>Enhancements 2</title>
+  <title>Enhancements 3</title>
   <!-- footer icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <!-- link stylesheet -->
@@ -27,7 +27,7 @@ Description: This is the  about section -->
 
 <body>
   <!-- define main container -->
-  <div class="container">
+  <div role="main" class="container">
     <?php
     include "header.inc";
     include "menu.inc";
@@ -38,32 +38,38 @@ Description: This is the  about section -->
       <h1 class="title">Enhancements 3</h1>
       <!-- create card 1 -->
       <section class="card-container-inner">
-        <h2>Enhancement 1: Resume Upload</h2>
+        <h2>Enhancement 1: Export to CSV</h2>
         <h3>How does it go beyond the basic requirements</h3>
         <ul>
           <li>
-            Allows the user to upload their resume to the server. Files are stored in the upload folder in the root directory.
+            Allows the user to export the entire DB to an excel file.
           </li>
         </ul>
         <h3>What code is needed to implement it:</h3>
         <ul>
           <li>
-            A html form presents the form and allows the user to upload
+            A button is available on the manage.php page to export
           </li>
           <li>
-            On submit, the upload-manager.php is actioned which checks the file format and size. If correct, the file is moved to the upload folder
+            On submit, the export.php is actioned which connects the db.
+          </li>
+          <li>
+            The data is then filtered, filename is set, column names set and records fetched
+          </li>
+          <li>
+            The result is a downloadable excel file with the db info
           </li>
         </ul>
         <h3>Where has this been used:</h3>
         <ul>
           <li>
-            On upload page
-            <a href="./upload.php">upload</a>
+            On manage page
+            <a href="./manage.php">manage</a>
           </li>
         </ul>
         <h3>
           Technique sourced from:
-          <a target="_blank" href="https://www.tutorialrepublic.com/php-tutorial/php-file-upload.php">link</a>
+          <a target="_blank" href="https://www.codexworld.com/export-data-to-excel-in-php/">link to excel technique</a>
         </h3>
         <br />
       </section>
@@ -106,8 +112,8 @@ Description: This is the  about section -->
         <h3>Learning Material Resources:</h3>
         <ul>
           <li>
-            Resume Upload:
-            <a target="_blank" href="https://www.tutorialrepublic.com/php-tutorial/php-file-upload.php">link</a>
+            Excel Export:
+            <a target="_blank" href="https://www.codexworld.com/export-data-to-excel-in-php/">link to codexworld</a>
           </li>
           <li>
             Learning Resources:

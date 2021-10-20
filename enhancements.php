@@ -3,7 +3,7 @@
 <!-- File Name: enhancements.php
 Author: Nick Ang
 Created 22/8/21
-Description: This is the  about section -->
+Description: This is the Html enhancements ection -->
 
 <!-- Set Viewport, Description, Author and Title -->
 
@@ -27,7 +27,7 @@ Description: This is the  about section -->
 
 <body>
   <!-- define main container -->
-  <div class="container">
+  <div role = "main" class="container">
     <?php
     include("header.inc");
     include("menu.inc");
@@ -73,7 +73,7 @@ Description: This is the  about section -->
         </ul>
         <h3>
           Technique sourced from:
-          <a target="_blank" href="https://redstapler.co/realistic-water-effect-svg-turbulence-filter/">link</a>
+          <a target="_blank" href="https://redstapler.co/realistic-water-effect-svg-turbulence-filter/">link to filter</a>
         </h3>
         <br />
       </section>
@@ -110,7 +110,7 @@ Description: This is the  about section -->
         </ul>
         <h3>
           Technique sourced from:
-          <a target="_blank" href="https://codepen.io/Rosefae/pen/XPaMYL">link</a>
+          <a target="_blank" href="https://codepen.io/Rosefae/pen/XPaMYL">link to animation</a>
         </h3>
         <br />
       </section>

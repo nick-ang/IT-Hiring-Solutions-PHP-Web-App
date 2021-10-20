@@ -1,3 +1,7 @@
+<!-- File Name: settings.php
+Author: Nick Ang
+Created 22/8/21
+Description: This is the  php file to store db info and export csv files -->
 <!-- Prevent URL access -->
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
