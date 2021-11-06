@@ -1,6 +1,8 @@
 # IT-Hiring-Solutions-PHP-Web-App
 A web app to store IT job Applications
 
+Built using PHP, MySQL, JavaScript and HTML/CSS
+
 Access here:
 
 https://it-hiring-solutions.herokuapp.com/
